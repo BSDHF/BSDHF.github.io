@@ -3,5 +3,4 @@ ________________________________________________________________________________
 建设中
 
 
-
-热重交流群:https://t.me/joinchat/NOkJN05E7aymFSMIPscSgQ
+TG交流群:https://t.me/joinchat/NOkJN05E7aymFSMIPscSgQ
