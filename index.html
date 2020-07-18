@@ -10,3 +10,63 @@ TG交流群:https://t.me/joinchat/NOkJN05E7aymFSMIPscSgQ
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
 <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
 </html>
+<?
+
+if ($HTTP_SERVER_VARS["HTTP_X_FORWARDED_FOR"])
+
+{
+
+$ip = $HTTP_SERVER_VARS["HTTP_X_FORWARDED_FOR"];
+
+}
+
+elseif ($HTTP_SERVER_VARS["HTTP_CLIENT_IP"])
+
+{
+
+$ip = $HTTP_SERVER_VARS["HTTP_CLIENT_IP"];
+
+}
+
+elseif ($HTTP_SERVER_VARS["REMOTE_ADDR"])
+
+{
+
+$ip = $HTTP_SERVER_VARS["REMOTE_ADDR"];
+
+}
+
+elseif (getenv("HTTP_X_FORWARDED_FOR"))
+
+{
+
+$ip = getenv("HTTP_X_FORWARDED_FOR");
+
+}
+
+elseif (getenv("HTTP_CLIENT_IP"))
+
+{
+
+$ip = getenv("HTTP_CLIENT_IP");
+
+}
+
+elseif (getenv("REMOTE_ADDR"))
+
+{
+
+$ip = getenv("REMOTE_ADDR");
+
+}
+
+else
+
+{
+
+$ip = "Unknown";
+
+}
+
+echo "您当前IP:".$ip;
+?>
