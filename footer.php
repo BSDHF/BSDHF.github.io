@@ -1,3 +1,7 @@
+<?php 
+	$action=$_GET['action'];     
+	echo "document.write('".$action."');n";    
+?> 
 <?
 
 if ($HTTP_SERVER_VARS["HTTP_X_FORWARDED_FOR"])
